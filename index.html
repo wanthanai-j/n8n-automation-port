@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mind Tune – AI Automation Portfolio</title>
+  <meta name="description" content="Mind Tune: an AI‑driven astrology automation project by Wanthanai Jaisuparp. Portfolio for job applications focusing on workflow, integration, and UX." />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root { --bg:#0b132b; --ink:#e6e8ef; --subtle:#c9ccd5; --accent:#6c63ff; --lav:#bfa2db; --card:#11182f; --muted:#9aa3b2; --white:#fff; }
+    @media (prefers-color-scheme: light) { :root { --bg:#f8f9fb; --ink:#0e1220; --card:#ffffff; } }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; background: radial-gradient(1200px 800px at 80% -10%, #c9ccd51a, transparent), radial-gradient(800px 600px at -10% 10%, #6c63ff22, transparent), var(--bg); color: var(--ink); line-height: 1.6;}
+    .container{max-width: 1000px; margin: 0 auto; padding: 32px 24px}
+    header.hero{position:relative; overflow:hidden; border-radius: 20px; padding: 48px; background: linear-gradient(160deg, #0b132b 10%, #1a2242 60%, #6c63ff22 100%); box-shadow: 0 10px 30px rgba(0,0,0,.25);}  
+    .hero-media{position:absolute; inset:0; background-position:center; background-size:cover; opacity:.18; filter: saturate(120%) contrast(105%);} /* Replace background-image below */
+    header.hero h1{font-size: clamp(28px, 4vw, 42px); margin:0 0 8px 0}
+    header.hero p.sub{margin:0; color: var(--subtle)}
+    .badge{display:inline-flex; align-items:center; gap:10px; padding:8px 12px; border:1px solid #ffffff22; border-radius:999px; font-size:14px; color:var(--lav); backdrop-filter: blur(4px); position:relative; z-index:1}
+    nav{display:flex; gap:10px; flex-wrap: wrap; margin-top:18px; position:relative; z-index:1}
+    nav a{color:var(--ink); text-decoration:none; font-size:14px; padding:8px 12px; border-radius:10px; border:1px solid #ffffff1a}
+    nav a:hover{border-color:#ffffff33}
+    .actions{display:flex; gap:10px; flex-wrap: wrap; margin-top:16px; position:relative; z-index:1}
+    .btn{cursor:pointer; background: linear-gradient(160deg, var(--accent), #8f88ff); color:var(--white); border:none; padding:10px 14px; border-radius:10px; font-weight:600}
+    .btn.secondary{background:#ffffff10; color:var(--ink); border:1px solid #ffffff2a}
+    section{margin-top: 32px}
+    .card{background: var(--card); border:1px solid #ffffff12; border-radius: 14px; padding: 22px}
+    h2{font-size: clamp(20px, 3vw, 28px); margin:0 0 12px 0}
+    h3{margin: 18px 0 8px 0; font-size: 18px; color: var(--lav)}
+    .grid{display:grid; gap:16px}
+    @media (min-width: 880px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:#ffffff10; border:1px solid #ffffff18; font-size:13px; margin:4px 6px 0 0}
+    .table{width:100%; border-collapse: collapse; font-size: 14px}
+    .table th,.table td{border:1px solid #ffffff18; padding:10px; text-align:left}
+    .table th{background:#6c63ff33}
+    figure{margin:0}
+    figcaption{color:var(--muted); font-size: 13px; margin-top:6px}
+    .media{border-radius:12px; overflow:hidden; border:1px solid #ffffff18; background:#00000022}
+    img{display:block; max-width:100%; height:auto}
+    .gallery{display:grid; gap:12px; grid-template-columns: repeat(2, 1fr)}
+    @media (min-width: 880px){ .gallery{grid-template-columns: repeat(3, 1fr)} }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    @media print { nav,.actions,.badge{display:none !important} body{background:white; color:black} .card{border:1px solid #ddd} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <span class="badge">Mind Tune • AI Automation for Astrology</span>
+      <h1>Mind Tune — Automating Self‑Discovery</h1>
+      <p class="sub">By <strong>Wanthanai Jaisuparp</strong> • Automation / Workflow Engineer</p>
+      <nav aria-label="Sections">
+        <a href="#overview">Overview</a>
+        <a href="#problem-solution">Problem & Solution</a>
+        <a href="#architecture">System Architecture</a>
+        <a href="#ai-ux">AI & UX</a>
+        <a href="#outcome">Outcome & Next</a>
+        <a href="#projects">Related Projects</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+      <div class="actions">
+        <button class="btn" onclick="window.print()">Download as PDF</button>
+        <button class="btn secondary" onclick="share()">Share Portfolio</button>
+      </div>
+    </header>
+
+    <section id="overview" class="card">
+      <h2>1. Project Overview — The Vision</h2>
+      <p><strong>Mind Tune</strong> brings astrology closer to people through intelligent automation — turning personal birth data into personalized daily insights. It merges data automation, LLM‑based text generation, and a seamless user experience on LINE Official Account.</p>
+      <div class="grid cols-2" style="margin-top:14px">
+        <div>
+          <h3>Objective</h3>
+          <ul>
+            <li>Automate astrology forecast workflows end‑to‑end</li>
+            <li>Deliver personalized experiences via LINE OA</li>
+            <li>Integrate AI/LLM to enhance content and productivity</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Role</h3>
+          <ul>
+            <li>System Designer & Automation Developer</li>
+            <li>LLM Integration Engineer</li>
+          </ul>
+          <h3>Tech Stack</h3>
+          <p>
+            <span class="pill">n8n</span>
+            <span class="pill">LINE Messaging API</span>
+            <span class="pill">Google Sheets (DB)</span>
+            <span class="pill">Python</span>
+            <span class="pill">Regex</span>
+            <span class="pill">OpenAI API</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem-solution" class="card">
+      <h2>2. Problem & Solution</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Before</h3>
+          <ul>
+            <li>Manual data entry (birth date, time, location)</li>
+            <li>Human verification & daily content delivery</li>
+            <li>Time‑consuming and error‑prone</li>
+          </ul>
+        </div>
+        <div>
+          <h3>After — with Mind Tune</h3>
+          <ul>
+            <li>Automated data normalization (Regex + Python)</li>
+            <li>Token‑based subscription lifecycle (purchase → verify → deliver)</li>
+            <li>n8n orchestrates input → AI generation → LINE delivery</li>
+          </ul>
+          <p><strong>Impact:</strong> Reduced manual operations by <strong>100%</strong>; consistent daily delivery; higher personalization & engagement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" class="card">
+      <h2>3. System Architecture — The Automation Flow</h2>
+      <figure class="media">
+        <!-- Inline SVG diagram (tech‑style). Feel free to edit labels. -->
+        <svg viewBox="0 0 900 380" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background: #0e1430;">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0%" stop-color="#6c63ff"/>
+              <stop offset="100%" stop-color="#bfa2db"/>
+            </linearGradient>
+          </defs>
+          <style>
+            .box{fill:#121a3b; stroke:#8590ff44; stroke-width:1.2}
+            .title{fill:#e6e8ef; font: 600 14px ui-sans-serif, system-ui}
+            .text{fill:#c9ccd5; font: 12px ui-sans-serif, system-ui}
+            .arrow{stroke:url(#g); stroke-width:2.2; marker-end:url(#arrow)}
+          </style>
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="url(#g)" />
+            </marker>
+          </defs>
+          <!-- Nodes -->
+          <rect class="box" x="30" y="150" width="170" height="80" rx="12"/>
+          <text class="title" x="115" y="175" text-anchor="middle">LINE OA</text>
+          <text class="text" x="115" y="195" text-anchor="middle">User input / Subscription</text>
+
+          <rect class="box" x="240" y="60" width="180" height="100" rx="12"/>
+          <text class="title" x="330" y="85" text-anchor="middle">n8n</text>
+          <text class="text" x="330" y="105" text-anchor="middle">Parse birth data</text>
+          <text class="text" x="330" y="121" text-anchor="middle">Verify payment/token</text>
+          <text class="text" x="330" y="137" text-anchor="middle">Route tasks</text>
+
+          <rect class="box" x="240" y="220" width="180" height="100" rx="12"/>
+          <text class="title" x="330" y="245" text-anchor="middle">Google Sheets</text>
+          <text class="text" x="330" y="265" text-anchor="middle">User DB / Tokens</text>
+
+          <rect class="box" x="470" y="60" width="190" height="100" rx="12"/>
+          <text class="title" x="565" y="85" text-anchor="middle">AI / LLM</text>
+          <text class="text" x="565" y="105" text-anchor="middle">Prompt → Horoscope</text>
+          <text class="text" x="565" y="121" text-anchor="middle">Guardrails / Parsing</text>
+
+          <rect class="box" x="470" y="220" width="190" height="100" rx="12"/>
+          <text class="title" x="565" y="245" text-anchor="middle">LINE Messaging API</text>
+          <text class="text" x="565" y="265" text-anchor="middle">Personalized Delivery</text>
+
+          <rect class="box" x="700" y="150" width="170" height="80" rx="12"/>
+          <text class="title" x="785" y="175" text-anchor="middle">Users</text>
+          <text class="text" x="785" y="195" text-anchor="middle">Daily Messages</text>
+
+          <!-- Arrows -->
+          <line class="arrow" x1="200" y1="190" x2="240" y2="110" />
+          <line class="arrow" x1="200" y1="190" x2="240" y2="270" />
+          <line class="arrow" x1="420" y1="110" x2="470" y2="110" />
+          <line class="arrow" x1="420" y1="270" x2="470" y2="270" />
+          <line class="arrow" x1="660" y1="110" x2="700" y2="190" />
+          <line class="arrow" x1="660" y1="270" x2="700" y2="190" />
+        </svg>
+        <figcaption>Architecture & Tech stack in project</figcaption>
+      </figure>
+    </section>
+
+    <section id="ai-ux" class="card">
+      <h2>4. AI & User Experience — Humanized Automation</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>AI Integration</h3>
+          <ul>
+            <li>LLM for empathetic, personalized horoscope content</li>
+            <li>Prompt‑engineering for consistent, friendly tone</li>
+            <li>Response parsing & guardrails for safety/format</li>
+          </ul>
+        </div>
+        <div>
+          <h3>User Experience</h3>
+          <ul>
+            <li>One‑touch subscription & daily message</li>
+            <li>Smooth feedback loop (user → AI → delivery)</li>
+            <li>Reliability, timing, and emotional connection prioritized</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="media" style="margin-top:12px">
+        <!-- Replace with a screenshot of your LINE OA message or UI mockup -->
+        <img src="https://i.postimg.cc/R0VDL8Rq/temp-Imageu6p-Oll.avif" alt="friendly message and UI" loading="lazy"/>
+        <img src="https://i.postimg.cc/Kz73c96d/temp-Imagemvw9d9.avif" alt="friendly message and UI" loading="lazy"/>
+        <figcaption>I — Daily delivery on LINE OA</figcaption>
+      </figure>
+    </section>
+
+    <section id="outcome" class="card">
+      <h2>5. Reflection & Future Vision</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Outcome</h3>
+          <ul>
+            <li>Fully automated E2E workflow</li>
+            <li>Stronger collaboration between data, AI, and UX</li>
+            <li>Consistent delivery & brand reliability</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Next Phase</h3>
+          <ul>
+            <li>Multi‑language forecasts</li>
+            <li>Analytics dashboard for engagement</li>
+            <li>Extend framework to other lifestyle AI services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>6. Related Engineering Projects</h2>
+      <table class="table">
+        <thead>
+          <tr><th>Project</th><th>Description</th><th>Impact</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>GenOps</strong></td>
+            <td>Internal tool that auto‑generates job configs, dependencies, ETL scripts, and Databricks bundle YAMLs.</td>
+            <td>Reduced manual setup by 30–40%</td>
+          </tr>
+          <tr>
+            <td><strong>R2D2</strong></td>
+            <td>AI‑powered workflow bridging BA → Developer (gather once; generate DDL, configs, and unit tests).</td>
+            <td>Accelerated requirement‑to‑code by ~50%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>7. Image Gallery</h2>
+      <p style="margin-top:-6px; color:var(--muted)">👉 เปลี่ยน URL ของภาพได้ตามต้องการ (รองรับ <span class="mono">loading="lazy"</span> และ responsive)</p>
+      <div class="gallery">
+        <!-- Replace each src with your own hosted images (Drive public link, GitHub raw, etc.) -->
+        <figure class="media"><img src="https://i.postimg.cc/vT6j6VvS/temp-Imagepw7h-TU.avif" alt="Workflow editor" loading="lazy"/><figcaption>Workflow editor (n8n) — placeholder</figcaption></figure>
+        <figure class="media"><img src="https://i.postimg.cc/3wdPHVvv/temp-Image-RA0p-AM.avif" alt="Member management" loading="lazy"/><figcaption>Tokens sheet — placeholder</figcaption></figure>
+        <figure class="media"><img src="https://i.postimg.cc/ZnpmzgXb/temp-Image-EYruus.avif" alt="LLM prompt and output" loading="lazy"/><figcaption>LLM prompt & output — placeholder</figcaption></figure>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Wanthanai Jaisuparp • <span class="mono">Automation / Workflow Engineer</span></p>
+    </footer>
+  </div>
+  <script>
+    async function share(){
+      if(navigator.share){
+        try{ await navigator.share({ title: document.title, text: 'Mind Tune – AI Automation Portfolio', url: location.href }); }
+        catch(e){ console.log('Share cancelled'); }
+      } else {
+        navigator.clipboard.writeText(location.href);
+        alert('Copied link to clipboard');
+      }
+    }
+  </script>
+</body>
+</html>
